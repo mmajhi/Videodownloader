@@ -3,4 +3,4 @@ import youtube_dl
 
 ydl_opts={}
 with youtube_dl.YoutubeDL(ydl_opts) as ydl:
-    ydl.download([input('Enter the youtube url: ')])
+    ydl.download([input('Enter the YouTube url: ')])
