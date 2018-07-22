@@ -15,7 +15,7 @@ if playlist=='Y' or playlist=='y':
         end=int(input("Playlist ending number: "))
     except:
         pass
-    ydl_opts = {'format': quality,'playliststart':start,'playlistend':end}
+    ydl_opts = {'format': quality,'playliststart':start,'playlistend':end,'outtmpl':'%(playlist_index)s%(title)s.%(ext)s'}
 
 else:
     ydl_opts = {'format' : quality,'noplaylist':1}
